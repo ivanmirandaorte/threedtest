@@ -25,6 +25,12 @@ if (container) {
 renderer.setClearColor(0xffffff, 0);
 
 /**
+ * Grid Helper
+ */
+const gridHelper = new THREE.GridHelper(1000, 1000, 0xffffff, 0xffffff);
+scene.add(gridHelper);
+
+/**
  * Lights
  */
 const light = new THREE.DirectionalLight(0xffffff, 0.5);
